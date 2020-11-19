@@ -1,0 +1,11 @@
+{
+  "name": "js-tool",
+  "version": "1.0.0",
+  "description": "common methods",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sixuewang",
+  "license": "ISC"
+}

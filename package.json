@@ -1,6 +1,6 @@
 {
-  "name": "js-tool",
-  "version": "1.0.0",
+  "name": "wsx-js-tool",
+  "version": "1.2.0",
   "description": "common methods",
   "main": "index.js",
   "scripts": {

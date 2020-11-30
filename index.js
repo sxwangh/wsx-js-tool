@@ -6,4 +6,5 @@ const wsxJsTool = {
   DateFuc,
 };
 
-export default wsxJsTool;
+export default wsxJsTool; // 加上babel
+// module.exports = wsxJsTool;

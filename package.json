@@ -1,11 +1,24 @@
 {
   "name": "wsx-js-tool",
-  "version": "1.2.0",
-  "description": "common methods",
-  "main": "index.js",
+  "version": "2.0.0",
+  "description": "common methods with babel & libraryTarget:umd 任何模块引入形式都支持/ main：入口文件 路径修改/",
+  "main": "dist/wsx-js-tool.min.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node script/build.js"
   },
   "author": "sixuewang",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.12.7",
+    "babel-loader": "^8.2.2",
+    "chalk": "^4.1.0",
+    "ora": "^5.1.0",
+    "rimraf": "^3.0.2",
+    "webpack": "^5.9.0",
+    "terser-webpack-plugin": "^5.0.3"
+  }
 }

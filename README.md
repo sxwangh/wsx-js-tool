@@ -23,3 +23,17 @@ DateFuc.getToday
 DateFuc.getDaysAgo
 DateFuc.getFormatDate -- 将Date格式 或 时间戳格式的时间 转成：'2020-11-24'
 ```
+
+
+# webpack 压缩打包
+```
+v1.0.0 通过index.js 作为入口，未打包
+v2.0.0 通过webpack打包成wsx-js-tool单文件，作为入口 供第三方引入
+ ---npm install -D babel-loader @babel/core @babel/preset-env webpack
+    (index.js :es6module export default x 或 commonjs module.exports=）
+    config.output.library: `${pkg.name}`,
+    config.output.libraryTarget: "umd" // 适用于任何形式的模块引入
+    引用该工具包，也可以使用es6 module (import x from 'xx');
+ ---npm i -D uglifyjs-webpack-plugin
+    to minify js file
+```

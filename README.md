@@ -1,9 +1,15 @@
+# 发布
+npm login
+npm who i am
+npm publish
+
 # 工程说明：
 ```asp
 package.json
 "main": "index.js",  -- 入口函数
 "version": "1.1.0", -- npm publish 的版本号 
 "name": "wsx-js-tool", -- 下载下来的npm文件夹的名字
+
 
 安装：
 npm install wsx-js-tool@1.1.0

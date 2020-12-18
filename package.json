@@ -1,6 +1,6 @@
 {
   "name": "wsx-js-tool",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "common methods with babel & libraryTarget:umd 任何模块引入形式都支持/ main：入口文件 路径修改/",
   "main": "dist/wsx-js-tool.min.js",
   "scripts": {

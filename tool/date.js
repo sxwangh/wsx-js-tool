@@ -34,10 +34,8 @@ function getFormatDate(date) {
   return `${Y}${M}${D}`;
 }
 
-const DateFuc = {
+export default {
   getToday,
   getDaysAgo,
   getFormatDate,
 };
-
-export default DateFuc;

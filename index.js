@@ -1,4 +1,4 @@
-import { getUrlParamByName,  } from './tool/commonMethods';
+import { getUrlParamByName, trim } from './tool/commonMethods';
 import { getToday, getDaysAgo, getFormatDate } from './tool/date';
 
 const wsxJsTool = {

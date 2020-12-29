@@ -30,7 +30,7 @@ function getFormatDate(date) {
   const newDate = new Date(date);
   const Y = `${newDate.getFullYear()}-`;
   const M = `${newDate.getMonth() + 1 < 10 ? `0${newDate.getMonth() + 1}` : newDate.getMonth() + 1}-`;
-  const D = `${newDate.getDate()} `;
+  const D = `${newDate.getDate() < 10 ? `0${newDate.getDate()}` : newDate.getDate()} `;
   return `${Y}${M}${D}`;
 }
 

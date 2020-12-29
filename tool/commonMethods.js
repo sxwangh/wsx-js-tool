@@ -11,6 +11,11 @@ function getUrlParamByName(name) {
   return null;
 }
 
+function trim(str) { // 去掉首尾两端的空格(^\s*)|(\s*$)
+  return str.replace(/(^\s*)|(\s*$)/g, '');
+}
+
 export {
   getUrlParamByName,
+  trim,
 }

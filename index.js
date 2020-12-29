@@ -1,9 +1,12 @@
-import { getUrlParamByName } from './tool/commonMethods';
-import DateFuc from './tool/date';
+import { getUrlParamByName,  } from './tool/commonMethods';
+import { getToday, getDaysAgo, getFormatDate } from './tool/date';
 
 const wsxJsTool = {
   getUrlParamByName,
-  DateFuc,
+  trim,
+  getToday,
+  getDaysAgo,
+  getFormatDate,
 };
 
 export default wsxJsTool; // 加上babel

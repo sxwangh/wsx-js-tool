@@ -34,7 +34,7 @@ function getFormatDate(date) {
   return `${Y}${M}${D}`;
 }
 
-export default {
+export {
   getToday,
   getDaysAgo,
   getFormatDate,

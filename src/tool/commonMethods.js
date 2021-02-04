@@ -15,7 +15,16 @@ function trim(str) { // 去掉首尾两端的空格(^\s*)|(\s*$)
   return str.replace(/(^\s*)|(\s*$)/g, '');
 }
 
+// 防抖
+function resizeLayoutThrottler(method) {
+  if (this.resizeThrottler) {
+    clearTimeout(this.resizeThrottler);
+  }
+  this.resizeThrottler = setTimeout(method, 100);
+}
+
 export {
   getUrlParamByName,
   trim,
+  resizeLayoutThrottler,
 }

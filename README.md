@@ -11,7 +11,8 @@ package.json
 "name": "wsx-js-tool", -- 下载下来的npm文件夹的名字
 
 
-安装：
+
+使用安装： --关联工程：wsx-js-tool-useExample
 npm install wsx-js-tool@2.0.1
 import wsxJsTool from 'wsx-js-tool';
 wsxJsTool.getUrlParamByName();
@@ -42,4 +43,5 @@ v2.0.0 通过webpack打包成wsx-js-tool单文件，作为入口 供第三方引
     引用该工具包，也可以使用es6 module (import x from 'xx');
  ---npm i -D uglifyjs-webpack-plugin
     to minify js file
+ ---install下来的工具包 包括：dist打包文件  /  wsx-js-tool整个工程文件  （TODO：install 希望只下载dist， https://blog.csdn.net/BLUE_JU/article/details/111360285）
 ```

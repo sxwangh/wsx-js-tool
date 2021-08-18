@@ -2,6 +2,7 @@
 npm login
 npm who i am
 npm publish
+先build，再该版本号，再npm publish
 
 # 工程说明：
 ```asp
@@ -44,4 +45,16 @@ v2.0.0 通过webpack打包成wsx-js-tool单文件，作为入口 供第三方引
  ---npm i -D uglifyjs-webpack-plugin
     to minify js file
  ---install下来的工具包 包括：dist打包文件  /  wsx-js-tool整个工程文件  （TODO：install 希望只下载dist， https://blog.csdn.net/BLUE_JU/article/details/111360285）
+v2.0.1 修改了webpack 的 library为 'hahahalibrary'
+```
+# webpack 配置项
+
+
+
+# commonjs 引用
+```javascript
+npm install wsx-js-tool-hi@2.1.7
+// const wsxJsTool = require('wsx-js-tool-hi').default;
+const wsxJsTool = require('wsx-js-tool-hi');
+console.log(wsxJsTool.getToday());
 ```

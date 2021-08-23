@@ -51,10 +51,39 @@ v2.0.1 修改了webpack 的 library为 'hahahalibrary'
 
 
 
-# commonjs 引用
-npm install wsx-js-tool-hi@2.1.7
+# commonjs 引用  wsx-js-tool-hi@2.1.9
+npm install wsx-js-tool-hi@2.1.9
 ```javascript
 // const wsxJsTool = require('wsx-js-tool-hi').default;
+// cmd
 const wsxJsTool = require('wsx-js-tool-hi');
 console.log(wsxJsTool.getToday());
+```
+
+# window. 引用  wsx-js-tool-hi@2.1.9
+```html
+// root
+<script src="./node_modules/wsx-js-tool-hi/dist/wsx-js-tool.min.js"></script>
+<script>
+    console.log(window['anyNameIsOk-root']); // 由于wsx-js-tool.min.js没有检测到 amd和cmd，所以加载root['anyNameIsOk-root']
+</script>
+```
+
+# amd 引用  wsx-js-tool-hi@2.1.9
+```html
+// amd
+<script src="./node_modules/requirejs/require.js"></script>
+<!--// 由于wsx-js-tool.min.js检测到了requirejs，所以按照amd的打包形式来引入，不走root的分支：else if(typeof define === 'function' && define.amd  define("anyNameIsOk-amd", [], factory);-->
+<script src="./node_modules/wsx-js-tool-hi/dist/wsx-js-tool.min.js"></script>
+<script>
+    console.log(require);
+    console.log(window['anyNameIsOk-root']); // undefined
+    debugger;
+    window.require(['anyNameIsOk-amd'], function(tool) {
+        debugger;
+        console.log(tool.getToday());
+        document.write(tool.getToday())
+    });
+
+</script>
 ```

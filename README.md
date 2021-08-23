@@ -50,8 +50,8 @@ v2.0.1 修改了webpack 的 library为 'hahahalibrary'
 # webpack 配置项
 
 
-
-# commonjs 引用  wsx-js-tool-hi@2.1.9
+### 使用例子：https://github.com/sxwangh/wsx-js-tool-useExample
+# 1/commonjs 引用  wsx-js-tool-hi@2.1.9
 npm install wsx-js-tool-hi@2.1.9
 ```javascript
 // const wsxJsTool = require('wsx-js-tool-hi').default;
@@ -60,7 +60,7 @@ const wsxJsTool = require('wsx-js-tool-hi');
 console.log(wsxJsTool.getToday());
 ```
 
-# window. 引用  wsx-js-tool-hi@2.1.9
+# 2/window. 引用  wsx-js-tool-hi@2.1.9
 ```html
 // root
 <script src="./node_modules/wsx-js-tool-hi/dist/wsx-js-tool.min.js"></script>
@@ -69,7 +69,7 @@ console.log(wsxJsTool.getToday());
 </script>
 ```
 
-# amd 引用  wsx-js-tool-hi@2.1.9
+# 3/amd 引用  wsx-js-tool-hi@2.1.9
 ```html
 // amd
 <script src="./node_modules/requirejs/require.js"></script>

@@ -55,7 +55,7 @@ v2.0.1 修改了webpack 的 library为 'hahahalibrary'
 npm install wsx-js-tool-hi@2.1.9
 ```javascript
 // const wsxJsTool = require('wsx-js-tool-hi').default;
-// cmd
+// commonjs
 const wsxJsTool = require('wsx-js-tool-hi');
 console.log(wsxJsTool.getToday());
 ```
@@ -65,7 +65,7 @@ console.log(wsxJsTool.getToday());
 // root
 <script src="./node_modules/wsx-js-tool-hi/dist/wsx-js-tool.min.js"></script>
 <script>
-    console.log(window['anyNameIsOk-root']); // 由于wsx-js-tool.min.js没有检测到 amd和cmd，所以加载root['anyNameIsOk-root']
+    console.log(window['anyNameIsOk-root']); // 由于wsx-js-tool.min.js没有检测到 amd和commonjs，所以加载root['anyNameIsOk-root']
 </script>
 ```
 

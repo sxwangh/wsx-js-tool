@@ -4,10 +4,6 @@ const path = require('path');
 const rootPath = path.resolve(__dirname, '../');
 const pkg = require('../package.json');
 
-// 插件
-// const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
-const TerserPlugin = require('terser-webpack-plugin');
-
 const config = {
   // mode: 'production',
   entry: path.resolve(rootPath, 'index.js'), // 根目录下的index.js
@@ -35,21 +31,6 @@ const config = {
   },
   plugins: [
   ],
-  // 这压缩也不知道有用没有，看起来 min.js文件也没变啊 1.34变成了1.36？？？？
-  // optimization: {
-  //   minimizer: [
-  //     new TerserPlugin({
-  //       terserOptions:{
-  //         compress:{
-  //           warnings: false,
-  //           drop_console: true,
-  //           drop_debugger: true,
-  //           pure_funcs: ["console.log"]
-  //         }
-  //       }
-  //     })
-  //   ],
-  // },
 };
 
 module.exports = config; // commonJs 用require

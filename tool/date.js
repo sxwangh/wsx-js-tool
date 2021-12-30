@@ -34,8 +34,19 @@ function getFormatDate(date) {
   return `${Y}${M}${D}`;
 }
 
+function toHHmmss (date) {
+  let time;
+  const hours = parseInt((date % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60), 10);
+  const minutes = parseInt((date % (1000 * 60 * 60)) / (1000 * 60), 10);
+  const seconds = (date % (1000 * 60)) / 1000;
+  time = (hours < 10 ? ('0' + hours) : hours) + ':' + (minutes < 10 ? ('0' + minutes) : minutes) + ':' + (seconds < 10 ? ('0' + seconds) : seconds);
+  return time;
+}
+
+
 export {
   getToday,
   getDaysAgo,
   getFormatDate,
+  toHHmmss,
 };

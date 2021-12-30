@@ -13,3 +13,7 @@ const wsxJsTool = {
 
 export default wsxJsTool; // 加上babel
 // module.exports = wsxJsTool;
+
+
+import tool from 'wsx-js-tool-hi';
+tool.getUrlParamByName();
